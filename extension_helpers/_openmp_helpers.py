@@ -180,7 +180,7 @@ def get_openmp_flags():
             link_flags.append('-Wl,-rpath,' + lib_path)
 
         if _check_if_compiler_is_icx():
-            openmp_flags = '-qopenmp'
+            openmp_flags = '-fiopenmp'
         else:
             openmp_flags = '-fopenmp'
 
